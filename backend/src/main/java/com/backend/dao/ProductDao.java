@@ -8,7 +8,7 @@ import com.backend.model.Product;
 @ComponentScan("com")
 @Repository
 public interface ProductDao {
-	public void addProduct(Product product);
+	public boolean addProduct(Product product);
 	
 	
 

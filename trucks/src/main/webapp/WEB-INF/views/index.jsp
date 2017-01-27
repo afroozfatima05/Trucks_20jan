@@ -11,7 +11,7 @@
  
  
  #navbar{
-color:white;margin:8px;border-radius:15px;font-size:150%;}
+color:white;margin:0px;border-radius:80px;font-size:150%;}
 
 
   .carousel-inner > .item > img,
@@ -55,11 +55,12 @@ color:white;margin:8px;border-radius:15px;font-size:150%;}
                     </div>
     <ul class="nav navbar-nav">
       <li class="active"><a href="/trucks">Home</a></li>
-      <li><a href="Services">Services</a></li>
+      <li><a href="category">Services</a></li>
        
         <li><a href="aboutus">About Us</a></li>
          <li class="current icon"><a href="/trucks"><img src="resources/img/logoex.png" alt="" width="150" height="60"></a></li>
    <li><a href="contactus">Contact Us</a></li>
+    <li><a href="product">Products</a></li>
    
     </ul>
     

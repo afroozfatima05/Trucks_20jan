@@ -17,12 +17,21 @@ public class CategoryDaoImpl implements CategoryDao{
 	@Autowired
 	private SessionFactory sessionFactory;
 	private static final Logger logger=LoggerFactory.getLogger(CategoryDaoImpl.class);
-	public void addCategory(Category category)
+	public boolean addCategory(Category category)
 	{
 		logger.info("---------------------------started------------------");
 	Session session=sessionFactory.getCurrentSession();
-	session.save(category);
-	System.out.println("category saved");
-	logger.info("---------------------------ended-------------------------");
+	Integer i=(Integer) session.save(category);
+	System.out.println("product saved");
+	if (i!=0)
+	{
+		logger.info("----------ended----------------");
+		return true;
 	}
+	else
+	{
+		return false;
+	}
+	}
+	
 }

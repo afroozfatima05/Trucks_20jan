@@ -25,15 +25,19 @@ public class UserDaoImpl implements UsersDao {
 		Session session=sessionFactory.getCurrentSession();
 		user.setEnabled(true);
 		Integer i=(Integer)session.save(user);
+		
+		
 		    UserRole userRole=new UserRole();
 		    userRole.setAuthority("ROLE_USER");
 		    userRole.setUserId(user.getUserId());
 		    session.save(userRole);
 		    
-		if(i==1)
-			check=true;
-		else
-			check=false;	
-		return check;
+		    if (i==1)
+		    check=true;
+		    else 
+		    	check=false;
+		    return check;
+		    
+		
 }
 }

@@ -10,7 +10,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <style>
   #navbar{
-color:white;margin:20px;border-radius:15px;font-size:150%;}
+color:white;margin:0px;border-radius:15px;font-size:150%;}
   .carousel-inner > .item > img,
   .carousel-inner > .item > a > img {
       width: 70%;
@@ -35,6 +35,8 @@ color:white;margin:20px;border-radius:15px;font-size:150%;}
         <li><a href="aboutus">About Us</a></li>
          <li class="current icon"><a href="/trucks"><img src="resources/img/logoex.png" alt="" width="150" height="60"></a></li>
          <li><a href="contactus">Contact Us</a></li>
+         <li><a href="product">Products</a></li>
+   
     </ul>
     
     <ul class="nav navbar-nav navbar-right">

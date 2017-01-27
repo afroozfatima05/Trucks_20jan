@@ -17,7 +17,7 @@
  
  
  #navbar{
-color:white;margin:20px;border-radius:15px;font-size:150%;}
+color:white;margin:0px;border-radius:15px;font-size:150%;}
 
 
   .carousel-inner > .item > img,
@@ -48,6 +48,8 @@ color:white;margin:20px;border-radius:15px;font-size:150%;}
         <li><a href="aboutus">About Us</a></li>
          <li class="current icon"><a href="/trucks"><img src="resources/img/logoex.png" alt="" width="150" height="60"></a></li>
          <li><a href="contactus">Contact Us</a></li>
+         <li><a href="product">Products</a></li>
+   
     </ul>
     
     <ul class="nav navbar-nav navbar-right">
@@ -58,7 +60,7 @@ color:white;margin:20px;border-radius:15px;font-size:150%;}
   </div>
 </nav>
 <style>
-body{background-image:url("resources/img/login1.jpg");}
+body{background-image:url("resources/img/200.jpg");}
 
 
 
@@ -67,7 +69,7 @@ input[type=text], input[type=password] {
     padding: 10px 20px;
     margin: 8px 0;
     display: inline-block;
-    border: 1px solid #ccc;
+    border: 5px solid #ccc;
     box-sizing: border-box;
 }
 
@@ -78,7 +80,7 @@ button {
     margin: 5px 0;
     border: none;
     cursor: pointer;
-    width: 25%;
+    width: 20%;
 }
 
 
@@ -88,9 +90,9 @@ button {
 }
 
 
-.container {
+/* .container {
     padding: 16px;
-}
+} */
 
 span.psw {
     float: right;
@@ -101,22 +103,22 @@ span.psw {
 <body>
 
 <div class="main">
-<form:form commandName="user">
+<form:form commandName="user" action="registeruser" method="post" >
 <center><h2>SignUp for free</h2></center>
 <center>
  
 
   <div class="container">
-    <label><b>Username:<form:input path="username"/></b></label>
+    <label><b>Username:<form:input path="username" placeholder="Enter Username"/></b></label>
     <br>
        <br>
-    <label><b>Password:<form:password path="password"/></b></label>
+    <label><b>Password:<form:password path="password" placeholder="Enter Username"/></b></label>
     <br>
     <br>
-    <label><b>Confirm password:<form:input path="confirmpassword"/></b></label>
+    <label><b>Confirm password:<form:input path="confirmpassword" placeholder="confirm password"/></b></label>
     <br>
   
-    <label><b>EmailId:<form:input path="emailid"/></b></label>
+    <label><b>EmailId:<form:input path="emailid" placeholder="Enter emailId"/></b></label>
     <br>
    </div>
     
@@ -124,10 +126,10 @@ span.psw {
 </form:form>
     
    
-  <div class="container" style="background-color:#f1f1f1">
+ <!--  <div class="container" style="background-color:#f1f1f1">
    
     
-  </div>
+  </div> -->
   </div>
 </center>
 

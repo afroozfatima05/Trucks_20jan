@@ -53,9 +53,9 @@ import com.backend.model.Users;
 			 localSessionFactoryBuilder.addProperties(getProperties());
 			 localSessionFactoryBuilder.addAnnotatedClasses(Users.class);
 			 localSessionFactoryBuilder.addAnnotatedClasses(UserRole.class);
-			/*localSessionFactoryBuilder.addAnnotatedClasses(Product.class);
+			localSessionFactoryBuilder.addAnnotatedClasses(Product.class);
 			localSessionFactoryBuilder.addAnnotatedClasses(Category.class);
-	localSessionFactoryBuilder.addAnnotatedClasses(Supplier.class);*/
+	localSessionFactoryBuilder.addAnnotatedClasses(Supplier.class);
 			 return localSessionFactoryBuilder.buildSessionFactory();
 		}
 		@Autowired

@@ -11,7 +11,7 @@
  
  
  #navbar{
-color:white;margin:8px;border-radius:15px;font-size:150%;}
+color:white;margin:0px;border-radius:15px;font-size:150%;}
 
 
   .carousel-inner > .item > img,
@@ -41,6 +41,8 @@ color:white;margin:8px;border-radius:15px;font-size:150%;}
         <li><a href="aboutus">About Us</a></li>
          <li class="current icon"><a href="/trucks"><img src="resources/img/logoex.png" alt="" width="150" height="60"></a></li>
    <li><a href="contactus">Contact Us</a></li>
+   <li><a href="product">Products</a></li>
+   
    
     </ul>
     
@@ -52,7 +54,7 @@ color:white;margin:8px;border-radius:15px;font-size:150%;}
   </div>
 </nav>  
 <style>
-body{background-image:url("resources/img/contact.png");}</style>
+body{background-image:url("resources/img/contact.jpg");}</style>
 
  
         <div class="contact-container">
@@ -65,7 +67,7 @@ body{background-image:url("resources/img/contact.png");}</style>
       	  </div>
       	  <div class="heading">
       	    <div class="container">
-                 <h1 style="margin: 24px 0 24px 0px;">
+                 <h1 style="margin: 5px 0 24px 0px;">
       		      Contact us
       		   </h1>
       		</div>

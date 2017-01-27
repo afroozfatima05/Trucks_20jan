@@ -17,11 +17,20 @@ public class SupplierDaoImpl implements SupplierDao {
 		@Autowired
 		private SessionFactory sessionFactory;
 		private static final Logger logger=LoggerFactory.getLogger(SupplierDaoImpl.class);
-		public void addSupplier(Supplier supplier)
+		public boolean addSupplier(Supplier supplier)
 		{
 			logger.info("----------------------started-----------------");
 		Session session=sessionFactory.getCurrentSession();
-		session.save(supplier);
-		logger.info("----------------------------------ended-------------------------");
+		Integer i=(Integer) session.save(supplier);
+		if (i!=0)
+		{
+			logger.info("----------------------------------ended-------------------------");
+			return true;
+		}
+		else
+		{
+			return false;
+		}
+		
 		}
 }

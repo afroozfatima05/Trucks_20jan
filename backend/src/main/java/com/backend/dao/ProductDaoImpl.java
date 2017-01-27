@@ -17,14 +17,22 @@ public class ProductDaoImpl implements ProductDao {
 	private SessionFactory sessionFactory;
 	private static final Logger logger=LoggerFactory.getLogger(ProductDaoImpl.class);
 
-	public void addProduct(Product product)
+	public boolean addProduct(Product product)
 	{
 		logger.info("----------started-----------------");
 	Session session=sessionFactory.getCurrentSession();
-	session.save(product);
+	Integer i=(Integer) session.save(product);
 	System.out.println("product saved");
-
-	logger.info("----------ended----------------");
+	if (i!=0)
+	{
+		logger.info("----------ended----------------");
+		return true;
+	}
+	else
+	{
+		return false;
+	}
+	
 	
 	
 	}

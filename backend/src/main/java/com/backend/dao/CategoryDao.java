@@ -9,6 +9,6 @@ import com.backend.model.Category;
 @Repository
 public interface CategoryDao {
 	
-	public void addCategory(Category category);
+	public boolean addCategory(Category category);
 
 }

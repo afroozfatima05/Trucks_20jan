@@ -3,6 +3,7 @@ package com.truck.automobile;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
@@ -13,6 +14,7 @@ import com.backend.model.Users;
 public class ControllerClass {
 	@Autowired
 	UsersDao usersDao;
+	
 	
 	@RequestMapping("/")
 	public String index()
@@ -27,7 +29,27 @@ public class ControllerClass {
 		System.out.println("login called");
 		return "login";
 	}
-
+	@RequestMapping("/login1")
+	public String login1()
+	{
+		System.out.println("login called");
+		return "login1";
+	}
+	
+	@RequestMapping("/registeruser")
+	public String registerUser(@ModelAttribute("user") Users user)
+	{
+		System.out.println("inside registeruser");
+		boolean b=usersDao.registerUser(user);
+		if (b)
+		{ 
+			return "login";
+		}
+		else
+		{
+			return "register";
+		}
+	}
 	@RequestMapping("/SignUp")
 	public String SignUp(Model model)
 	{
@@ -36,7 +58,6 @@ public class ControllerClass {
 		
 		return "SignUp";
 	}
-	
 	@RequestMapping("/aboutus")
 	public String aboutus()
 	{
@@ -47,7 +68,7 @@ public class ControllerClass {
 	public String Services()
 	{
 		System.out.println("services called");
-		return "Services";
+		return "catagory";
 	}
 	@RequestMapping("/contactus")
 	public String contactus()

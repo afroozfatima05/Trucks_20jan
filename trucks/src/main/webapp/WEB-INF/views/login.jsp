@@ -1,4 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+ <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
 <html lang="en">
@@ -13,7 +13,7 @@
  
  
  #navbar{
-color:white;margin:20px;border-radius:15px;font-size:150%;}
+color:white;margin:0px;border-radius:15px;font-size:150%;}
 
 
   .carousel-inner > .item > img,
@@ -44,6 +44,8 @@ color:white;margin:20px;border-radius:15px;font-size:150%;}
         <li><a href="aboutus">About Us</a></li>
          <li class="current icon"><a href="/trucks"><img src="resources/img/logoex.png" alt="" width="150" height="60"></a></li>
          <li><a href="contactus">Contact Us</a></li>
+         <li><a href="product">Products</a></li>
+   
     </ul>
     
     <ul class="nav navbar-nav navbar-right">
@@ -54,7 +56,7 @@ color:white;margin:20px;border-radius:15px;font-size:150%;}
   </div>
 </nav>
 <style>
-body{background-image:url("resources/img/login1.jpg");}
+body{background-image:url("resources/img/Car-Mirror.jpg");}
 
 
 
@@ -107,7 +109,7 @@ span.psw {
 <div class="main">
 
 <center><h2>Login here</h2></center>
-<center><form action="action_page.php">
+<center><form name='f' action="<c:url value='j_spring_security_check'/>" method='POST' >
  
 
   <div class="container">
@@ -131,4 +133,27 @@ span.psw {
 
 </body>
 </div>
-</html>
+</html> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
